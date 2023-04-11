@@ -72,9 +72,6 @@ public class JoinedUser extends Game{
 
         private Builder(){
         }
-        public static Builder newBuilder() {
-            return new Builder();
-        }
 
         public Builder gameUuid(UUID gameUuid) {
             this.gameUuid = gameUuid;

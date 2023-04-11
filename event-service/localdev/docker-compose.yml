@@ -8,17 +8,17 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - metadata_data1:/var/lib/postgresql/data_1
+      - metadata_data:/var/lib/postgresql/data
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB= gameService
+      - POSTGRES_DB= eventService
     networks:
       - backend
 
 
 volumes:
-  metadata_data1: {}
+  metadata_data: {}
 
 networks:
   backend: {}

@@ -27,7 +27,7 @@ public class GameService {
         Game response = gameRepository.save(game);
 
         // set gameCreator user as admin
-        JoinedUser joinedUser = JoinedUser.Builder.newBuilder()
+        JoinedUser joinedUser = JoinedUser.builder()
                 .gameUuid(response.getUuid())
                 .userUuid(user_uuid)
                 .admin(true)
